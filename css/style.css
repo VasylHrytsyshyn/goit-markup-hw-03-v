@@ -290,25 +290,55 @@ nav li:not(:first-child) {
 /*FOOTER*/
 
 footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+
 	background: var(--secondary-bg-color);
 }
-footer span {
-	font-style: normal;
+
+.logo-footer > img {
+	display: block;
 }
-.address {
+
+.logo-footer {
+	display: block;
+	width: 145px;
+
+	padding-top: 6px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+
+}
+
+
+.addres > a {
+	display: block;
+
+	font-style: normal;
+	text-decoration: none;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.71;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
 	color: var(--hero-text-color);
 }
-.contacts {
+.contacts-mail > a,
+.contacts-tell > a  {
+	display: block;
+
+	font-style: normal;
+	text-decoration: none;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.71;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
 	color:rgba(255, 255, 255, 0.6);
 	;
+}
+
+.footer-contacts > li:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 

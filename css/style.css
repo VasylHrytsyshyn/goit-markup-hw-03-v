@@ -10,10 +10,7 @@
 	--team-bg: #F5F4FA;
 	--filter-bg-color: #F5F4FA;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
+
 body {
 	font-family: Roboto;
 	background: var(--primary-bg-color);
@@ -21,7 +18,71 @@ body {
 body li {
 	list-style-type: none;
 }
-header a {
+
+/*убираем стандартные маржены*/
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+/*container*/
+
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*HEADER*/
+
+#header > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header a {
+	display: block;
+}
+
+nav {
+	display: flex;
+}
+
+.navygation {
+	display: flex;
+	margin-left: 93px;
+}
+
+.contact-us {
+	display: flex;
+	margin-left: 331px;
+}
+
+.logo-header {
+	padding-top: 6px;
+	padding-bottom: 5px;
+	margin-top: 24px;
+	margin-bottom: 25px;
+
+}
+
+.logo-header img {
+	display: block;
+}
+
+nav li:not(:first-child) {
+	margin-left: 50px;
+}
+
+.navygation a,
+.contact-us a {
+
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 14px;
@@ -41,6 +102,9 @@ header a {
 	color: var(--acent-text-color-navigation);
 }
 
+/*END HEADER*/
+
+/*HERO*/
 .block-hero {
 	background: var(--secondary-bg-color);
 	color: var(--hero-text-color);
@@ -72,6 +136,9 @@ header a {
 .block-hero > button:focus {
 	background: var(--hero-button-bg-activ);
 }
+
+/*end HERO*/
+
 /* скрываем h2 который отсутствует на макете*/
 .our-features > h2 {
 	opacity: 0;
